@@ -54,6 +54,7 @@ const corsOptions = {
       "https://nileflow.co.ke",
       "https://nileassitbackend.onrender.com",
       "https://nileassisst.onrender.com",
+      "https://nileassitadmin.onrender.com",
     ];
 
     // Add the clientUrl if it's set and not already in the list
