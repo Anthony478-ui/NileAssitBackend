@@ -48,10 +48,9 @@ const corsOptions = {
     const allowedOrigins = [
       "http://localhost:5173",
       "http://localhost:5174",
-      "https://nile-mart-backend-2.onrender.com",
-      "https://nileflow-com.onrender.com",
+
       "http://localhost:3000", // Add if you have frontend dev server on 3000
-      "https://nileflow.co.ke",
+
       "https://nileassitbackend.onrender.com",
       "https://nileassisst.onrender.com",
       "https://nileassitadmin.onrender.com",
@@ -85,12 +84,7 @@ const corsOptions = {
 // Middleware
 app.use(helmet());
 app.use(limiter);
-app.use(
-  cors({
-    ...corsOptions,
-    preflightContinue: true, // Allow handling preflight requests
-  })
-);
+app.use(cors(corsOptions));
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
 
