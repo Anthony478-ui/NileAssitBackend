@@ -52,6 +52,7 @@ const corsOptions = {
       "https://nileflow-com.onrender.com",
       "http://localhost:3000", // Add if you have frontend dev server on 3000
       "https://nileflow.co.ke",
+      "https://nileassitbackend.onrender.com",
     ];
 
     // Add the clientUrl if it's set and not already in the list
